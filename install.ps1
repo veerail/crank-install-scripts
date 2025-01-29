@@ -50,7 +50,10 @@ $MainMenu = {
 
                 Clear-Host
                 #Installs packages through chocolatey
-                choco install cinebench 7zip vlc discord googlechrome firefox ubisoft-connect epicgameslauncher steam spotify wget sdio -y
+                choco install cinebench 7zip vlc discord googlechrome firefox ubisoft-connect epicgameslauncher steam wget sdio -y
+
+                Clear-Host
+                Write-Host "Finished"
                }
             }
         }
