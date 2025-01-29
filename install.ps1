@@ -24,14 +24,17 @@ $MainMenu = {
         Switch ($Select)
             {
             1 {
+                Clear-Host
                 #Installs Chocolatey
                 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
                }
             2 {
+                Clear-Host
                 #Installs packages through chocolatey
                 choco install cinebench 7zip vlc discord googlechrome firefox ubisoft-connect epicgameslauncher steam spotify wget sdio -y
                }
             3 {
+                Clear-Host
                 #Sets Dns for WiFi
                 netsh interface ipv4 set dnsservers "Wi-Fi" static 1.1.1.1 primary
                 netsh interface ipv4 set dnsservers "Wi-Fi" static 3.3.3.3 index=2
@@ -41,8 +44,11 @@ $MainMenu = {
                 netsh interface ipv4 set dnsservers "Ethernet" static 3.3.3.3 index=2
                }
             4 {
+                Clear-Host
                 #Installs Chocolatey
                 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+                Clear-Host
                 #Installs packages through chocolatey
                 choco install cinebench 7zip vlc discord googlechrome firefox ubisoft-connect epicgameslauncher steam spotify wget sdio -y
                }
