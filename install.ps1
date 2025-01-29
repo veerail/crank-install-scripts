@@ -6,7 +6,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 #Install Packages with Chocolatey
 choco install cinebench 7zip vlc discord googlechrome firefox ubisoft-connect epicgameslauncher steam spotify -y
 
-#Set Dns
+#Set Dns (Just testing)
 netsh interface ipv4 set dnsservers "Wi-Fi" static 1.1.1.1 primary
 netsh interface ipv4 set dnsservers "Wi-Fi" static 3.3.3.3 index=2
 
