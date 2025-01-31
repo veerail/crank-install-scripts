@@ -42,6 +42,10 @@ $MainMenu = {
                 #Sets Dns For Ethernet
                 netsh interface ipv4 set dnsservers "Ethernet" static 1.1.1.1 primary
                 netsh interface ipv4 set dnsservers "Ethernet" static 3.3.3.3 index=2
+
+                #Shets Dns For Ethernet 3 (Scorptec Prebuilts)
+                netsh interface ipv4 set dnsservers "Ethernet 3" static 1.1.1.1 primary
+                netsh interface ipv4 set dnsservers "Ethernet 3" static 3.3.3.3 index=2
                }
             4 {
                 Clear-Host
